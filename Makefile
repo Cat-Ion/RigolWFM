@@ -6,6 +6,8 @@ KSY_OPTIONS = --outdir RigolWFM
 
 YAML_LINT_OPTIONS = -d "{extends: default, rules: {document-start: disable}}"
 
+export PYTHONPATH ?= .
+
 all: $(python_parsers)
 
 RigolWFM/wfm1000d.py: ksy/wfm1000d.ksy
